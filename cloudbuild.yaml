@@ -1,9 +1,9 @@
 steps:
-   - name: "gcr.io/cloud-builders/mvn"
-    args:	
-    - package
-    artifacts:
-    objects:
-   location: 'gs://mindtreegcp/'
+- name: "gcr.io/cloud-builders/mvn"
+  args:	
+  - package
+artifacts:
+  objects:
+    location: 'gs://mindtreegcp/'
     paths:
-    - "${_TARGET}"
+    - "${_TARGET}"
