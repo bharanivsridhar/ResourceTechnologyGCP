@@ -1,0 +1,10 @@
+steps:
+ 	- name: "gcr.io/cloud-builders/mvn"
+ 	args:
+ 	- package
+ 	dir: 'resourcetechnologymapping'
+ 	artifacts:
+ 	objects:
+ 	location: 'gs://mindtreegcp/'
+ 	paths:
+ 	- "${_TARGET}"
