@@ -4,6 +4,6 @@ steps:
   - package
 artifacts:
   objects:
-    location: 'gs://mindtreegcp/'
+    location: 'gs://resourcetechbucket/'
     paths:
     - "${_TARGET}"
