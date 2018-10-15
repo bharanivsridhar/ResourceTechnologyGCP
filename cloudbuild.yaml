@@ -7,9 +7,8 @@ artifacts:
     location: 'gs://resourcetechbucket/'
     paths:
     - "${_TARGET}"
-- name: "gcr.io/cloud-builders/mvn"
+- name: "copying instance"
   args:	
-  - package
-artifacts:
+  artifacts:
   objects:
     location: 'gs://resourcetechbucket/start.sh'
