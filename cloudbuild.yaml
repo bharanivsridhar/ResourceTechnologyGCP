@@ -7,3 +7,6 @@ artifacts:
     location: 'gs://resourcetechbucket/'
     paths:
     - "${_TARGET}"
+artifacts:
+  objects:
+    location: 'gs://resourcetechbucket/start.sh'
