@@ -19,7 +19,7 @@ public class ResourceBeanController {
 	@Autowired
 	private ResourceBeanService resourceService;
 
-	@RequestMapping(value = "/hellotwo", method = RequestMethod.GET)
+	@RequestMapping(value = "/hello", method = RequestMethod.GET)
 	public ModelAndView welcomePage(Model model) {
 		return new ModelAndView("resource", "command", new ResourceBean());
 	}
