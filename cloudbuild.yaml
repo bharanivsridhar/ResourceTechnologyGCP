@@ -1,9 +1,11 @@
 steps:
 - name: "gcr.io/cloud-builders/mvn"
+  args:
+  - install
+- name: "gcr.io/cloud-builders/mvn"
   args:	
   - package
-  dir: 'resourcetechnologymapping'
-  - name: "gcr.io/cloud-builders/gcloud"  
+- name: "gcr.io/cloud-builders/gcloud"  
     args: [ 'compute', 'instances', 'create', 'backend-web-app-instance-cb', '--image=gcp-backend-image', '--machine-type=n1-standard-1','--zone=asia-south1-c','--metadata=startup-script-url=gs://resourcetechbucket/start.sh' ]
 artifacts:
   objects:
